@@ -1,5 +1,5 @@
 from rest_framework import  serializers 
-from myApp.models import Distribuidora, Cliente, Fatura 
+from geraFaturas.models import Distribuidora, Cliente, Fatura 
 
 
 # Serializers define the API representation.

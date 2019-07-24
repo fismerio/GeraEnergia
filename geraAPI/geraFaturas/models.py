@@ -17,7 +17,7 @@ class Cliente(models.Model):
 
 	nome = models.CharField(max_length=200) 
 	numero = models.IntegerField() 
-	distribuidora = models.ForeignKey('Distribuidora', related_name=’clientes’, on_delete=models.CASCADE)
+	distribuidora = models.ForeignKey('Distribuidora', related_name='clientes', on_delete=models.CASCADE)
 	
 	def __str__(self):
 		return self.nome
@@ -28,8 +28,8 @@ class Fatura(models.Model):
 		db_table = 'fatura' 
 
 	referencia = models.DateField()          				#date
-	valor = models.models.FloatField()						#float
-	cliente = models.ForeignKey('Cliente', related_name=’faturas’, on_delete=models.CASCADE)
+	valor = models.FloatField()						#float
+	cliente = models.ForeignKey('Cliente', related_name='faturas', on_delete=models.CASCADE)
 
 	#need str method?
 	#need class Meta?
