@@ -1,0 +1,2 @@
+# GeraEnergia
+Simple API
