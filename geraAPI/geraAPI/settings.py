@@ -38,7 +38,8 @@ INSTALLED_APPS = [
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
 	'geraFaturas',
-	'rest_framework'
+	'rest_framework',
+	'csvimport.app.CSVImportConf'
 ]
 
 MIDDLEWARE = [
